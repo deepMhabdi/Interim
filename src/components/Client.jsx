@@ -17,6 +17,7 @@ const Client = () => {
           }
         }}
         
+        
         className="flex mb-60 gap-[10px] mt-10 overflow-hidden">
           {[
             {
