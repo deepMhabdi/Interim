@@ -1,4 +1,5 @@
 import React from "react";
+import Buttons from "./Buttons";
 
 const Landing = () => {
   return (
@@ -11,6 +12,18 @@ const Landing = () => {
             Our Creative <span className="satisfy-regular">Twist</span>
           </h1>
         </div>
+      <div className="flex items-center justify-between mt-2">
+        <div></div>
+        <div className="p-5 bg-[#f6f7e9] w-[400px] h-full rounded-xl ">
+          <p className="text-[#4b5a54] inter-nav text-xl">
+            With a commitment to sustainability and innovative solutions where
+            we craft beautiful, functional spaces that stand the test of time.
+          </p>
+          <div className="mt-4">
+            <Buttons/>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
   );
