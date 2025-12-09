@@ -1,9 +1,10 @@
 import { CircleStop } from "lucide-react";
+import Card from "../subcomponents/Card";
 
 const AboutUs = () => {
   return (
-    <div className="">
-      <div className="w-full h-screen flex gap-[100px] items-start mt-10 justify-center">
+    <div className="flex flex-col   ">
+      <div className="w-full  flex gap-[100px] items-start mt-10 justify-center">
         <div className="flex gap-1 items-center justify-center ">
           <CircleStop height={15} width={15} />
           <h1 className="tracking-tight whitespace-nowrap font-semibold">
@@ -23,14 +24,18 @@ const AboutUs = () => {
           <div className="flex">
             <h1 className="inter tracking-wide">KNOW MORE </h1>
           </div>
-          {/*  */}
         </div>
-        {/* <div className="flex gap-1 items-center ">
-          <CircleStop height={15} width={15} />
-          <h1 className="tracking-tight whitespace-nowrap font-semibold">
-            BY THE NUMBERS
-          </h1>
-        </div> */}
+      </div>
+
+      <div className="flex gap-1 items-center mt-15 ">
+        <CircleStop height={15} width={15} className="mb-0.5" />
+        <h1 className=" whitespace-nowrap font-semibold text-sm ">
+          BY THE NUMBERS
+        </h1>
+      </div>
+
+      <div className="flex gap-3 mt-5">
+        <Card />
       </div>
     </div>
   );

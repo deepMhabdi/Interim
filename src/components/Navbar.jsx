@@ -1,5 +1,3 @@
-import { h1 } from "motion/react-client";
-import React from "react";
 
 const Navbar = () => {
   return (
