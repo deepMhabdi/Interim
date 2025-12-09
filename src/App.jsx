@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import Pacakages from "./components/Pacakages";
 import Awards from "./components/Awards";
 import Faq from "./components/Faq";
+import Landing from "./components/Landing";
 
 import { Mail, Phone } from "lucide-react";
 import Navbar from "./components/Navbar";
@@ -12,7 +13,7 @@ const App = () => {
     <div className="relative h-screen">
       <Navbar />
       <div className="bg-[#fefff2] p-10 ">
-        {/* hero */}
+        <Landing />
         <AboutUs />
         <Awards />
         <Pacakages />
