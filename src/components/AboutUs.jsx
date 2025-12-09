@@ -2,6 +2,7 @@ import { CircleStop } from "lucide-react";
 import Card from "../subcomponents/Card";
 
 const AboutUs = () => {
+  
   return (
     <div className="flex flex-col   ">
       <div className="w-full  flex gap-[155px] items-start mt-10 ">

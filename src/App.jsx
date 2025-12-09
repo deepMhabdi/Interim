@@ -26,11 +26,11 @@ const App = () => {
           <Mail height={18} width={18} className="font-bold" color="#f2ac83" />
           <h1 className="whitespace-nowrap">Free Quote</h1>
         </div>
-        <div className="bg-neutral-200 text-[#1d332c] font-bold w-fit p-2   rounded-xl h-[40px] mr-[10px]  flex gap-2">
+        <div className="bg-neutral-200 text-[#1d332c] font-bold w-fit p-2   rounded-xl h-10 mr-2.5  flex gap-2">
           <Phone color="#f2ac83" />
           <h1 className="whitespace-nowrap">+1 555 123 4567</h1>
         </div>
-        <div className="bg-white text-[#1d332c] w-fit p-2 mb-2 ring-2 ring-neutral-200   rounded-xl h-[40px] mr-[10px]  flex gap-2">
+        <div className="bg-white text-[#1d332c] w-fit p-2 mb-2 ring-2 ring-neutral-200   rounded-xl h-10 mr-2.5  flex gap-2">
           <Phone color="#f2ac83" />
           <a className="whitespace-nowrap">Made in Framer</a>
         </div>
