@@ -2,7 +2,6 @@ import { CircleStop } from "lucide-react";
 import Card from "../subcomponents/Card";
 
 const AboutUs = () => {
-  
   return (
     <div className="flex flex-col   ">
       <div className="w-full  flex gap-[155px] items-start mt-10 ">
@@ -35,7 +34,7 @@ const AboutUs = () => {
         </h1>
       </div>
 
-      <div className="flex gap-3 mt-5 mb-5">
+      <div className="cards flex gap-3 mt-5 mb-5">
         <Card
           number={200}
           heading={"Project Completed"}
