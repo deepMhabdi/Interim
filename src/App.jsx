@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import Lenis from "lenis";
 import Client from "./components/Client";
 import Footer from "./components/Footer";
 import Pacakages from "./components/Pacakages";
@@ -9,8 +11,34 @@ import { Mail, Phone } from "lucide-react";
 import Navbar from "./components/Navbar";
 import AboutUs from "./components/AboutUs";
 const App = () => {
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time) {
+      lenis.raf(time);
+      const debugEl = document.getElementById('lenis-debug');
+      if (debugEl) {
+        debugEl.style.transform = `rotate(${lenis.velocity * 5}deg)`;
+      }
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
+
   return (
-    <div className="relative h-screen">
+    <div className="relative min-h-screen w-full overflow-hidden">
+      {/* Lenis Debug Indicator - Delete after checking */}
+      <div
+        id="lenis-debug"
+        className="fixed top-1/2 left-10 z-[9999] w-12 h-12 bg-red-500 rounded flex items-center justify-center text-white font-bold transition-transform duration-75 will-change-transform"
+      >
+        TEST
+      </div>
       <Navbar />
       <div className="bg-[#fefff2] p-10 ">
         <Landing />

@@ -1,10 +1,13 @@
-import React from "react";
 import Buttons from "./Buttons";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const Landing = () => {
+  const { scrollY } = useScroll();
+  const y = useTransform(scrollY, [0, 900], [0, -1300]);
+
   return (
     <div>
-      <div className="w-full h-screen ">
+      <div className="w-full">
         <div className="mt-35">
           <h1 className="text-hero leading-30 text-[#1d332c] inter-nav tracking-tight">
             Your Ideas,
@@ -25,7 +28,7 @@ const Landing = () => {
           </div>
         </div>
       </div>
-      <div className="vid ">
+      <motion.div style={{ y, marginBottom: y }} className="vid  mt-50" data-scroll data-scroll-speed="2">
         <video
           src="https://framerusercontent.com/assets/mSsTg3IQcSmGsgmBbKnv84RbHUw.mp4"
           loop
@@ -34,8 +37,8 @@ const Landing = () => {
           preload="auto"
           className="w-full h-full object-cover rounded-xl"
         ></video>
-      </div>
-    </div>
+      </motion.div>
+    </div >
   );
 };
 

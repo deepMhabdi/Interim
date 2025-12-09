@@ -3,7 +3,7 @@ import Card from "../subcomponents/Card";
 
 const AboutUs = () => {
   return (
-    <div className="flex flex-col   ">
+    <div className="flex flex-col">
       <div className="w-full  flex gap-[155px] items-start mt-10 ">
         <div className="flex gap-1 items-center justify-start ">
           <CircleStop height={15} width={15} />
@@ -47,7 +47,7 @@ const AboutUs = () => {
           heading={"Years of Expertise"}
           text={
             "With 15 years in the industry, we bring a wealth of knowledge and skill to every project."
-          }
+          } 
         />
         <Card
           number={150}

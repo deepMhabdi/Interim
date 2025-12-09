@@ -1,5 +1,4 @@
 import { Plus } from "lucide-react";
-import { style } from "framer-motion/client";
 import {
   motion,
   animate,
