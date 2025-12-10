@@ -1,6 +1,7 @@
 
 import { CircleStopIcon } from "lucide-react";
 import ProjectCard from "../subcomponents/ProjectCard";
+import Buttons from "./Buttons";
 export default function Projects() {
     return (
         <>
@@ -14,8 +15,14 @@ export default function Projects() {
                 </div>
                 <div className="flex flex-col gap-3">
                     <ProjectCard firstButton="RESIDENTIAL" secondButton="SINGLE HOME" imgurl="https://framerusercontent.com/images/YROLmfdQa2zqlwGcAWrlPhNRVk.jpg?scale-down-to=1024" heading={<>Costal Harmony <br />Home </>} text="The Coastal Harmony Home project was a comprehensive renovation of a beachside house, transforming it into a serene and stylish retreat that reflects the client's love for the ocean and nature." />
+                    <ProjectCard firstButton="RESIDENTIAL" secondButton="SINGLE HOME" imgurl="https://framerusercontent.com/images/YROLmfdQa2zqlwGcAWrlPhNRVk.jpg?scale-down-to=1024" heading={<>Costal Harmony <br />Home </>} text="The Coastal Harmony Home project was a comprehensive renovation of a beachside house, transforming it into a serene and stylish retreat that reflects the client's love for the ocean and nature." />
+                    <ProjectCard firstButton="RESIDENTIAL" secondButton="SINGLE HOME" imgurl="https://framerusercontent.com/images/YROLmfdQa2zqlwGcAWrlPhNRVk.jpg?scale-down-to=1024" heading={<>Costal Harmony <br />Home </>} text="The Coastal Harmony Home project was a comprehensive renovation of a beachside house, transforming it into a serene and stylish retreat that reflects the client's love for the ocean and nature." />
+                    <ProjectCard firstButton="RESIDENTIAL" secondButton="SINGLE HOME" imgurl="https://framerusercontent.com/images/YROLmfdQa2zqlwGcAWrlPhNRVk.jpg?scale-down-to=1024" heading={<>Costal Harmony <br />Home </>} text="The Coastal Harmony Home project was a comprehensive renovation of a beachside house, transforming it into a serene and stylish retreat that reflects the client's love for the ocean and nature." />
                 </div>
 
+                <div className="mt-20 flex items-center justify-center">
+                    <Buttons title="All Projects" />
+                </div>
             </div>
         </>
     )
