@@ -11,7 +11,7 @@ import Landing from "./components/Landing";
 import Navbar from "./components/Navbar";
 import AboutUs from "./components/AboutUs";
 import Services from "./components/Services";
-
+import Projects from "./components/Projects";
 
 const App = () => {
   useEffect(() => {
@@ -40,6 +40,7 @@ const App = () => {
       </div>
       <Services />
       <div className="bg-[#fefff2] p-10 ">
+        <Projects />
         <Awards />
         <Pacakages />
         <Client />
