@@ -58,7 +58,7 @@ const Landing = () => {
               we craft beautiful, functional spaces that stand the test of time.
             </p>
             <div className="mt-4">
-              <Buttons />
+              <Buttons title={'Buy Template'}/>
             </div>
           </div>
         </div>
