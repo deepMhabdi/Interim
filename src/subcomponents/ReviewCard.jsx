@@ -9,7 +9,7 @@ export default function ReviewCard({ avatarUrl, name, designation, review, imgUr
                 <div className="inter-nav mt-10">
                     {review}
                                </div>
-           <div className="overflow-hidden relative">
+           <div className="overflow-hidden relative mb-2 rounded-xl">
             <img src={imgUrl} alt="" className="rounded-xl"/>
             <div className="absolute top-0 right-3 bg-red-800 mt-2 ">
                 <MoveRight/>
