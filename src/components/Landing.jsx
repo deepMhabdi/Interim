@@ -10,21 +10,21 @@ const Landing = () => {
     {
       id: 1,
       name: "Mathews R",
-      review: "I was so happy with the final result. The team was professional and delivered on time.",
+      review: [ "I was so happy with the final result.", "The team was professional and delivered on time.","I was so happy with the final result.", 'The team was professional and delivered on time." '],
       stars: 5,
     },
-    {
-      id: 2,
-      name: "Samantha",
-      review: "Interim has been a game-changer for our business.Their ability to blend modern design with sustainable practices has been invaluable.",
-      stars: 4,
-    },
-    {
-      id: 3,
-      name: "Tony M",
-      review: "The custom furniture design exceeded our expectations.Each piece is a work of art.",
-      stars: 5,
-    }
+    // {
+    //   id: 2,
+    //   name: "Samantha",
+    //   review: "Interim has been a game-changer for our business.Their ability to blend modern design with sustainable practices has been invaluable.",
+    //   stars: 4,
+    // },
+    // {
+    //   id: 3,
+    //   name: "Tony M",
+    //   review: "The custom furniture design exceeded our expectations.Each piece is a work of art.",
+    //   stars: 5,
+    // }
   ]
 
 
@@ -38,8 +38,8 @@ const Landing = () => {
             Our Creative <span className="satisfy-regular">Twist</span>
           </h1>
         </div>
-        <div className="flex items-center justify-between mt-2">
-          <div>
+        <div className="flex  items-center justify-between mt-2">
+          <div >
             {/* show based on index  */}
             {reviews.map(({ id, name, review, stars }) => (
               <div key={id} className="flex flex-col gap-5">
@@ -48,9 +48,25 @@ const Landing = () => {
                     <Star key={index} color="#f2ac83" />
                   ))}
                 </div>
+                <p className="inter-nav  text-[#1d332c]">
+                 "{review.map((line , index)=>(
+                    <span key={index}>
+                      {line}
+                      <br />
+                    </span>
+                  ))}
+                </p>
               </div>
 
             ))}
+          <div className="flex gap-3 mt-10">
+              <div className="bg-[#f6f7e9] w-[25px] h-[4px] rounded-2xl border ">
+              </div>
+              <div className="bg-[#f6f7e9] w-[25px] h-[4px] rounded-2xl border ">
+              </div>
+              <div className="bg-[#f6f7e9] w-[25px] h-[4px] rounded-2xl border ">
+              </div>
+          </div>
           </div>
           <div className="p-5 bg-[#f6f7e9] w-[400px] h-full rounded-xl ">
             <p className="text-[#4b5a54] inter-nav text-xl">
@@ -70,7 +86,7 @@ const Landing = () => {
           playsInline
           muted
           preload="auto"
-          className="w-full h-full object-cover rounded-xl shadow-top-only shadb     w-white"
+          className="w-full h-full object-cover rounded-xl shadow-top-only "
         ></video>
       </motion.div>
     </div >
