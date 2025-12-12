@@ -31,11 +31,11 @@ export default function Services() {
                     </div>
 
                     {/* View all services button , hidden till then! */}
-                   
-                    <div className="flex justify-center cursor-pointer mt-5">
-                    <Buttons  title="View All Services" onClick={() => { setShow(!show) }} />
+
+                    <div className="flex justify-center cursor-pointer mt-5 w-full h-[100px] absolute bottom-0 left-0 bg-linear-to-t from-[#f6f7e9] via-[#f6f7e9]/80 to-transparent items-center z-10">
+                        {!show && <Buttons title="View All Services" onClick={() => { setShow(!show) }} />}
                     </div>
-                    
+
                     <div>
 
                         {show && <div className="flex gap-3">
@@ -45,6 +45,7 @@ export default function Services() {
                             <ServiceCard imgUrl="https://framerusercontent.com/images/oRUk4DWQlowBGueG4Q0N2M4gkwo.png" heading={<>Residential<br />Interior Design</>} text="Tailored design servies for private homes, including room makeovers, new build interiors, and full home renovations." />
                         </div>
                         }
+                        { }
                     </div>
 
                 </div>
