@@ -16,6 +16,7 @@ const Landing = () => {
       review: [
         "I was so happy with the final result.",
         "The team was professional and delivered on time.",
+        "The design was unique and beautiful.",
       ],
       stars: 5,
     },
@@ -24,7 +25,8 @@ const Landing = () => {
       name: "Samantha",
       review: [
         "Interim has been a game-changer for our business.",
-        "Their ability to blend modern design with sustainable practices has been invaluable.",
+        "Their ability to blend modern design with ",
+        "sustainable practices has been invaluable.",
       ],
       stars: 4,
     },
@@ -32,14 +34,15 @@ const Landing = () => {
       id: 3,
       name: "Tony M",
       review: [
-        "The custom furniture design exceeded our expectations.",
+        "The custom furniture design exceeded","our expectations.",
         "Each piece is a work of art.",
+        "The design is unique and beautiful.",
       ],
       stars: 5,
     },
   ];
 
-  // Auto-rotate reviews every 5 seconds
+  
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentReviewIndex((prevIndex) => (prevIndex + 1) % reviews.length);
@@ -82,6 +85,7 @@ const Landing = () => {
               <p className="inter-nav text-[#1d332c] font-semibold">
                 - {currentReview.name}
               </p>
+              
             </div>
             <div className="flex gap-3 mt-10">
               {reviews.map((_, index) => (
