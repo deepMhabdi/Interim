@@ -1,6 +1,11 @@
 import { CircleStopIcon } from "lucide-react";
 import ServiceCard from "../subcomponents/ServiceCard";
+import Buttons from "./Buttons";
+import { useState } from "react";
+
 export default function Services() {
+    const [show, setShow] = useState(false);
+
     return (
         <>
             <div className="w-full min-h-screen relative bg-[#f6f7e9] px-4 py-4  overflow-hidden">
@@ -26,12 +31,22 @@ export default function Services() {
                     </div>
 
                     {/* View all services button , hidden till then! */}
-                    <div className="flex gap-3">
-                        <ServiceCard imgUrl="https://framerusercontent.com/images/oRUk4DWQlowBGueG4Q0N2M4gkwo.png" heading={<>Residential<br />Interior Design</>} text="Tailored design servies for private homes, including room makeovers, new build interiors, and full home renovations." />
-                        <ServiceCard imgUrl="https://framerusercontent.com/images/oRUk4DWQlowBGueG4Q0N2M4gkwo.png" heading={<>Residential<br />Interior Design</>} text="Tailored design servies for private homes, including room makeovers, new build interiors, and full home renovations." />
-                        <ServiceCard imgUrl="https://framerusercontent.com/images/oRUk4DWQlowBGueG4Q0N2M4gkwo.png" heading={<>Residential<br />Interior Design</>} text="Tailored design servies for private homes, including room makeovers, new build interiors, and full home renovations." />
-                        <ServiceCard imgUrl="https://framerusercontent.com/images/oRUk4DWQlowBGueG4Q0N2M4gkwo.png" heading={<>Residential<br />Interior Design</>} text="Tailored design servies for private homes, including room makeovers, new build interiors, and full home renovations." />
+                   
+                    <div className="flex justify-center cursor-pointer mt-5">
+                    <Buttons  title="View All Services" onClick={() => { setShow(!show) }} />
                     </div>
+                    
+                    <div>
+
+                        {show && <div className="flex gap-3">
+                            <ServiceCard imgUrl="https://framerusercontent.com/images/oRUk4DWQlowBGueG4Q0N2M4gkwo.png" heading={<>Residential<br />Interior Design</>} text="Tailored design servies for private homes, including room makeovers, new build interiors, and full home renovations." />
+                            <ServiceCard imgUrl="https://framerusercontent.com/images/oRUk4DWQlowBGueG4Q0N2M4gkwo.png" heading={<>Residential<br />Interior Design</>} text="Tailored design servies for private homes, including room makeovers, new build interiors, and full home renovations." />
+                            <ServiceCard imgUrl="https://framerusercontent.com/images/oRUk4DWQlowBGueG4Q0N2M4gkwo.png" heading={<>Residential<br />Interior Design</>} text="Tailored design servies for private homes, including room makeovers, new build interiors, and full home renovations." />
+                            <ServiceCard imgUrl="https://framerusercontent.com/images/oRUk4DWQlowBGueG4Q0N2M4gkwo.png" heading={<>Residential<br />Interior Design</>} text="Tailored design servies for private homes, including room makeovers, new build interiors, and full home renovations." />
+                        </div>
+                        }
+                    </div>
+
                 </div>
 
             </div>
