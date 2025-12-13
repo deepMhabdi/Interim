@@ -47,6 +47,18 @@ const Landing = () => {
 
   const currentReview = reviews[currentReviewIndex];
 
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div>
       <div className="w-full">
@@ -54,7 +66,7 @@ const Landing = () => {
           <h1 className="md:text-hero md:leading-30 leading-none whitespace-nowrap text-[4.5rem]  text-[#1d332c] inter-nav tracking-tight">
             Your Ideas,
             <br />
-            <div className="flex md:flex-row flex-col">Our Creative <span className="satisfy-regular md:ml-6">Twist</span></div>
+            <div className="flex md:flex-row md:tracking-none tracking-tight flex-col ">Our Creative <span className="satisfy-regular md:ml-6">Twist</span></div>
 
           </h1>
         </div>
@@ -108,8 +120,8 @@ const Landing = () => {
         </div>
       </div>
       <motion.div
-        style={{ y, marginBottom: y }}
-        className="vid mt-50 "
+        style={isMobile ? {} : { y, marginBottom: y }}
+        className="vid md:mt-50 mt- "
         data-scroll
         data-scroll-speed="0.6"
       >

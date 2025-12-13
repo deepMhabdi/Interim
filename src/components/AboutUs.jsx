@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 const AboutUs = () => {
   motion;
   return (
-    <div className="flex flex-col z-[1999]  bg-[#fefff2]">
+    <div className="flex flex-col z-[1999]  bg-[#fefff2] md:mt-0 mt-20">
       <div className="w-full   flex  md:flex-row flex-col md:gap-[155px] gap-5  items-start mt-10 ">
         <div className="flex  gap-1 items-center justify-start ">
           <CircleStop height={15} width={15} />
@@ -17,9 +17,9 @@ const AboutUs = () => {
           <h1 className="md:text-4xl text-3xl tracking-wider  inter-nav  text-[#1d332c]">
             <span className="ml-10"></span>Founded in 2010, our studio started
             as a small team  of design enthusiasts with big dreams. At
-            Interim, we're not just <br /> about creating beautiful spaces –
-            we're about crafting stories <br /> and making dreams come true! Our
-            passionate team of  design <br /> enthusiasts loves turning ordinary
+            Interim, we're not just <br className="md:block hidden" /> about creating beautiful spaces –
+            we're about crafting stories <br className="md:block hidden" /> and making dreams come true! Our
+            passionate team of  design <br className="md:block hidden" /> enthusiasts loves turning ordinary
             rooms into  extraordinary experiences, blending creativity
             with a touch of  whimsy.{" "}
           </h1>
