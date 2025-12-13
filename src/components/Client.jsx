@@ -42,12 +42,12 @@ const Client = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center gap-1 text-[#1d332c]">
-      < h1 className="text-[1.5rem] inter-nav mt-10 md:mr-5 text-center">CLIENTS</h1>
+    <div className="flex flex-col md:mt-0 mt-10  items-center justify-center gap-1 text-[#1d332c]">
+      < h1 className="text-[1.5rem] inter-nav mt-10 md:mr-5 mr-[250px]">CLIENTS</h1>
       <h1 className="text-5xl inter font-extrabold">Our Beloved Clients</h1>
       <div className="flex mt-10 overflow-hidden w-full mb-60">
         <div
-          
+
           className="flex shrink-0 boxes"
         >
           {[...clients, ...clients].map(({ image, text }, index) => (

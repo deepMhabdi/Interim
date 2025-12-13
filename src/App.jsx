@@ -33,7 +33,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen w-full overflow-hidden">
+    <div className="relative   w-full overflow-hidden">
 
       <Navbar />
       <div className="bg-[#fefff2] md:p-10  p-3">
