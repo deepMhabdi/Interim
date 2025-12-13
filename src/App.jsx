@@ -13,6 +13,7 @@ import Projects from "./components/Projects";
 import Review from "./components/Reviews";
 import Blogs from "./components/Blogs"
 import Specialities from "./components/Specialities";
+import ContactForm from "./components/ContactForm";
 
 const App = () => {
   useEffect(() => {
@@ -51,16 +52,17 @@ const App = () => {
 
       </div>
       <div className="p-10">
-        
+
         <Specialities />
       </div>
-        <Blogs />
-     <div className="p-10">
-       
-          <Faq />
-          <Footer />
-       
-     </div>
+      <Blogs />
+      <div className="p-10">
+
+        <Faq />
+        <ContactForm />
+        <Footer />
+
+      </div>
       {/* <div className="absolute bottom-0 right-0 flex flex-col justify-end items-center  fixed gap-2 z-999">
         <div className="bg-neutral-200 text-[#1d332c] ml-[60px] text-sm font-bold w-fit h-fit p-2  rounded-xl  mr-[10px]  flex gap-2">
           <Mail height={18} width={18} className="font-bold" color="#f2ac83" />

@@ -12,14 +12,14 @@ export default function Reviews() {
                     <h1 className=" text-[#1e3730] text-[0.9rem] font-bold tracking-wide">CLIENTS WORDS</h1>
                 </div>
 
-<div className="flex shrink-0 overflow-hidden w-full">
-    
+                <div className="flex shrink-0 overflow-hidden w-full">
+
                     <motion.div
                         animate={{
                             x: '-50%',
                         }}
-                        transition={ { ease: "linear", duration: 25 , repeat:Infinity  }}
-    
+                        transition={{ ease: "linear", duration: 25, repeat: Infinity }}
+
                         className="flex gap-3 shrink-0   ">
                         <ReviewCard imgUrl={'https://framerusercontent.com/images/RmuI2pxfTjlOuiW99H1cZ6zZY08.jpg'} review={'Interim is a great company. They are always there when you need them.Their ability to listen and understand your needs is exceptional.'} />
                         <ReviewCard imgUrl={'https://framerusercontent.com/images/RmuI2pxfTjlOuiW99H1cZ6zZY08.jpg'} review={'Interim is a great company. They are always there when you need them.Their ability to listen and understand your needs is exceptional.'} />
@@ -29,9 +29,9 @@ export default function Reviews() {
                         <ReviewCard imgUrl={'https://framerusercontent.com/images/RmuI2pxfTjlOuiW99H1cZ6zZY08.jpg'} review={'Interim is a great company. They are always there when you need them.Their ability to listen and understand your needs is exceptional.'} />
                         <ReviewCard imgUrl={'https://framerusercontent.com/images/RmuI2pxfTjlOuiW99H1cZ6zZY08.jpg'} review={'Interim is a great company. They are always there when you need them.Their ability to listen and understand your needs is exceptional.'} />
                         <ReviewCard imgUrl={'https://framerusercontent.com/images/RmuI2pxfTjlOuiW99H1cZ6zZY08.jpg'} review={'Interim is a great company. They are always there when you need them.Their ability to listen and understand your needs is exceptional.'} />
-    
+
                     </motion.div>
-</div>
+                </div>
 
             </div>
 
