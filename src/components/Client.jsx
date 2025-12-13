@@ -43,18 +43,11 @@ const Client = () => {
 
   return (
     <div className="flex flex-col items-center justify-center gap-1 text-[#1d332c]">
-      < h1 className="text-[1rem] inter-nav mt-10 mr-5">CLIENTS</h1>
+      < h1 className="text-[1.5rem] inter-nav mt-10 md:mr-5 text-center">CLIENTS</h1>
       <h1 className="text-5xl inter font-extrabold">Our Beloved Clients</h1>
       <div className="flex mt-10 overflow-hidden w-full mb-60">
         <div
-          // animate={{
-          //   x: "-50%",
-          // }}
-          // transition={{
-          //   duration: 12,
-          //   ease: "linear",
-          //   repeat: Infinity,
-          // }}
+          
           className="flex shrink-0 boxes"
         >
           {[...clients, ...clients].map(({ image, text }, index) => (

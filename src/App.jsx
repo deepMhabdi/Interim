@@ -45,12 +45,12 @@ const App = () => {
         <Projects />
       </div>
       <Review />
-      <div className="bg-[#fefff2] p-10 ">
+      <div className="bg-[#fefff2] md:p-10 p-5 ">
         <Awards />
         <Client />
         <Pacakages />
       </div>
-      <div className="p-10">
+      <div className="md:p-10 p-5">
 
         {/* <Specialities /> */}
       </div>
