@@ -22,7 +22,7 @@ function Card({ number, heading, text }) {
   motion;
   return (
     <div ref={ref}>
-      <div className="py-5 px-5 bg-[#f6f7e9] w-[450px] h-[420px] flex flex-col gap-[100px] justify-between rounded-xl">
+      <div className="py-5 px-5 bg-[#f6f7e9] md:w-[450px] w-[370px] h-[420px] flex flex-col md:gap-[100px] gap-[60px] justify-between rounded-xl">
         <div className="flex">
           <motion.div className="text-8xl font-medium text-[#1d332c] text-card inter-nav">
             {rounded}

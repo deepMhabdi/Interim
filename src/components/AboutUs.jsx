@@ -5,16 +5,16 @@ import { motion } from "motion/react";
 const AboutUs = () => {
   motion;
   return (
-    <div className="flex flex-col">
-      <div className="w-full   flex gap-[155px] items-start mt-10 ">
-        <div className="flex gap-1 items-center justify-start ">
+    <div className="flex flex-col z-[1999]  bg-[#fefff2]">
+      <div className="w-full   flex  md:flex-row flex-col md:gap-[155px] gap-5  items-start mt-10 ">
+        <div className="flex  gap-1 items-center justify-start ">
           <CircleStop height={15} width={15} />
           <h1 className="tracking-tight whitespace-nowrap font-semibold ">
             About Us
           </h1>
         </div>
         <div className="flex flex-col gap-10">
-          <h1 className="text-4xl tracking-wider font- inter-nav  text-[#1d332c]">
+          <h1 className="md:text-4xl text-3xl tracking-wider  inter-nav  text-[#1d332c]">
             <span className="ml-10"></span>Founded in 2010, our studio started
             as a small team  of design enthusiasts with big dreams. At
             Interim, we're not just <br /> about creating beautiful spaces –
@@ -47,7 +47,7 @@ const AboutUs = () => {
         </h1>
       </div>
 
-      <div className="cards flex gap-3 mt-5 mb-25">
+      <div className="cards flex  md:flex-row  flex-col md:gap-3 gap-7 mt-5 mb-25">
         <Card
           number={200}
           heading={"Project Completed"}
