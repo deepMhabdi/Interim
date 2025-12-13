@@ -59,7 +59,7 @@ const App = () => {
       <div className="bg-[#fffef2] ">
         <Faq />
       </div>
-      <div className="p-10">
+      <div className="md:p-10  p-4">
         <ContactForm />
         <Footer />
       </div>

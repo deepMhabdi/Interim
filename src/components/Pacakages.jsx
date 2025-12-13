@@ -97,10 +97,10 @@ export default function Home() {
         <main className="min-h-screen bg-[#fefff2]">
             {/* Heading Section */}
             <section className="w-full pt-12 md:pt-20 pb-8 md:pb-12 px-4 md:px-8">
-                <div className="max-w-7xl mx-auto">
-                    <div className="flex items-center justify-center mb-4">
+                <div className="max-w-7xl mx-auto relative">
+                    <div className="flex items-center justify-center md:absolute md:left-1/2 md:top-0 md:-translate-x-12 md:translate-y-7 ">
                         <CircleStop height={12} width={12} className="mr-2 text-[#1d332c]" />
-                        <span className="text-[#1d332c] font-light text-sm tracking-wide">PRICING PLANS</span>
+                        <span className="text-[#1d332c] font-light text-sm tracking-wide ">PRICING PLANS</span>
                     </div>
                     <h1 className="text-[#1d332c] font-semibold text-6xl sm:text-7xl md:text-8xl lg:text-[12vw] tracking-tighter text-center">
                         Packages

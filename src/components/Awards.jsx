@@ -4,13 +4,13 @@ import Badge from "../subcomponents/Badge";
 export default function Awards() {
   return (
     <div className="w-full min-h-screen py-3 px-2 pr-1 pl-1 relative overflow-hidden flex flex-col  bg-[#1f3831] rounded-xl">
-      <div className="flex  absolute top-0 left-0 md:translate-x-115 md:translate-y-35  translate-x-25 translate-y-12 items-center justify-center">
+      <div className="flex  absolute top-0 left-0 md:translate-x-115 md:translate-y-25  translate-x-18 translate-y-12 items-center justify-center">
         <div>
           <CircleStop
             height={12}
             width={12}
             color="#f2ac83"
-            className="mt-0.5 mr-1"
+            className="mb-0.5 mr-1"
           />
         </div>
         <h1 className="text-[#f2ac83] md:font-medium font-bold text-[0.8rem]">

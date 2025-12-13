@@ -6,7 +6,7 @@ export default function Projects() {
     return (
         <>
 
-            <div className="w-full min-h-screen relative  px-4 py-4  mb-15 md:overflow-hidden">
+            <div className="w-full min-h-screen relative  px-4 py-4  mb-15 md:overflow-hidden md:mt-0 mt-5">
                 <h1 className="md:text-services text-[6rem] mr-5 interServices text-center  tracking-tight text-[#1e3730]">Projects</h1>
                 <div className="flex gap-1 absolute top-0 left-1/2 md:-translate-x-65 md:translate-y-32 translate-y-7 -translate-x-20 items-center  justify-center">
                     <CircleStopIcon className="w-3 h-3 mb-[0.2rem]" />

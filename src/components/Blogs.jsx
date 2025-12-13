@@ -8,7 +8,7 @@ export default function Blogs() {
         <h1 className="md:text-[13rem] text-[9rem]  interServices text-center  tracking-tight text-[#1e3730]   ">Blogs</h1>
         <div className="flex gap-1 absolute top-0 left-1/2 -translate-x-13 md:translate-y-24 translate-y-16 items-center  justify-center">
           <CircleStopIcon className="w-3 h-3 mb-[0.1rem]" />
-          <h1 className=" text-[#1e3730] text-[0.9rem] font-bold tracking-wide uppercase">articles and insights</h1>
+          <h1 className=" text-[#1e3730] text-[0.9rem] font-bold tracking-wide uppercase whitespace-nowrap">articles and insights</h1>
 
         </div>
 
