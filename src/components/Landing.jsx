@@ -30,13 +30,13 @@ const Landing = () => {
       id: 3,
       name: "Tony M",
       review: [
-        "The custom furniture design exceeded","our expectations.Each piece is a work of art.The design is unique and beautiful.",
+        "The custom furniture design exceeded", "our expectations.Each piece is a work of art.The design is unique and beautiful.",
       ],
       stars: 5,
     },
   ];
 
-  
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentReviewIndex((prevIndex) => (prevIndex + 1) % reviews.length);
@@ -51,7 +51,7 @@ const Landing = () => {
     <div>
       <div className="w-full">
         <div className="mt-35">
-          <h1 className="text-hero leading-30 text-[#1d332c] inter-nav tracking-tight">
+          <h1 className="md:text-hero md:leading-30 leading-none whitespace-nowrap text-[4rem]  text-[#1d332c] inter-nav tracking-tight">
             Your Ideas,
             <br />
             Our Creative <span className="satisfy-regular">Twist</span>
@@ -79,19 +79,18 @@ const Landing = () => {
                     return acc;
                   }, [])}
                 <span>"</span><span className="inter-nav text-[#1d332c] font-semibold">
-                - {currentReview.name}
-              </span>
+                  - {currentReview.name}
+                </span>
               </p>
-              
-              
+
+
             </div>
             <div className="flex gap-3 mt-10">
               {reviews.map((_, index) => (
                 <div
                   key={index}
-                  className={`w-[25px] h-[4px] rounded-2xl border transition-colors ${
-                    index === currentReviewIndex ? "bg-[#1d332c]" : "bg-[#f6f7e9]"
-                  }`}
+                  className={`w-[25px] h-[4px] rounded-2xl border transition-colors ${index === currentReviewIndex ? "bg-[#1d332c]" : "bg-[#f6f7e9]"
+                    }`}
                 ></div>
               ))}
             </div>

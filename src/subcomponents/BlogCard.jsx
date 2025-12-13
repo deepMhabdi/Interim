@@ -4,10 +4,10 @@ export default function BlogCard({ imgurl, tag, date, timeToRead, heading, }) {
         <>
             <a href="#">
 
-                <div className="bg-[#fefff2] rounded-xl px-3   w-[720px] h-[290px] group overflow-hidden">
+                <div className="bg-[#fefff2] rounded-xl px-3   md:w-[720px] md:h-[290px] w-full h-[250px] group overflow-hidden">
                     <div className="flex gap-3">
                         <div className="w-[260px] h-[260px] mt-4 overflow-hidden rounded-xl">
-                            <img src={imgurl} alt="" className="w-full h-full object-cover   rounded-xl transition-transform duration-700 ease-in group-hover:scale-110 " />
+                            <img src={imgurl} alt="" className="md:w-full md:h-full  w-[250px] h-[240px]   object-cover   rounded-xl transition-transform duration-700 ease-in group-hover:scale-110 " />
                         </div>
                         <div className="flex flex-col justify-between">
                             <div>
