@@ -11,7 +11,7 @@ export default function ProjectCard({ firstButton, secondButton, imgurl, heading
                 </div>
                 <div className="flex flex-col items-start justify-between md:-ml-[150px]">
                     <p className="inter-nav text-[#1e3730]  leading-none">{text}</p>
-                    <h1 className="inter  text-[#1e3730] text-[1.8rem] leading-none">{heading}</h1>
+                    <h1 className="inter  text-[#1e3730] text-[1.8rem] leading-none mt-7 md:mt-0">{heading}</h1>
                 </div>
             </div>
         </>

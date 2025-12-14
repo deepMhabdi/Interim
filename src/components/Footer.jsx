@@ -18,6 +18,56 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center md:items-start md:justify-center md:gap-40">
 
             <div className="flex flex-col md:mt-0 mt-7">
+              <div className="flex md:hidden gap-10 md:gap-15 mt-10 mb-10 text-left">
+                <div className="flex flex-col gap-2">
+                  <h1 className="text-[#f2ac83]">Menu</h1>
+                  <a href="#home" className="text-[#f2ac83] hover:underline">
+                    Home
+                  </a>
+                  {[
+                    "About",
+                    "Projects",
+                    "Gallery",
+                    "Videos",
+                    "Blog",
+                    "Review",
+                    "Contact",
+                  ].map((item, index) => (
+                    <a
+                      key={index}
+                      href={`#${item}`}
+                      className="hover:underline w-fit  text-white  transition-300 delay-200 ease-in hover:text-[#f2ac83]"
+                    >
+                      {item}
+                    </a>
+                  ))}
+                </div>
+                <div className="flex flex-col gap-2">
+                  <h1 className="text-[#f2ac83]">Services</h1>
+                  {[
+                    "Residential Interior Design",
+                    "Commercial Interior Design",
+                    "Design Consultation",
+                    "Space Planning",
+                    "Lighting Design",
+                    "Furniture Design",
+                    "Art and Accessory Procurement",
+                    "Color Consultation",
+                    "Outdoor and Landscape Design",
+                    "Renovation and Remodeling",
+                    "Project Management",
+                    "Styling and Staging",
+                  ].map((item, index) => (
+                    <a
+                      key={index}
+                      href={`#${item}`}
+                      className="hover:underline w-fit  text-white  transition-300 delay-200 ease-in hover:text-[#f2ac83]"
+                    >
+                      {item}
+                    </a>
+                  ))}
+                </div>
+              </div>
               {/* icon grid  */}
 
               <div className="uppercase grid grid-rows-2 grid-cols-3     md:gap-x-4 gap-x-4 gap-y-2 md:mt-10 ">
@@ -60,7 +110,7 @@ const Footer = () => {
               </button>
             </div>
             {/* links  */}
-            <div className="flex gap-10 md:gap-15 mt-10  text-left">
+            <div className="md:flex hidden gap-10 md:gap-15 mt-10  text-left">
               <div className="flex flex-col gap-2">
                 <h1 className="text-[#f2ac83]">Menu</h1>
                 <a href="#home" className="text-[#f2ac83] hover:underline">
