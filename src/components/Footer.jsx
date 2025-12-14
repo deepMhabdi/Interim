@@ -12,9 +12,9 @@ const Footer = () => {
   motion;
   const [hoveredIndex, setHoveredIndex] = useState(null);
   return (
-    <div className=" md:flex flex flex-col ">
-      <div className="bg-[#1e3730] rounded-xl text-white min-h-screen  w-full ssmd:py-3  flex flex-col ">
-        <div className="md:px-10 px-3 ">
+    <div className=" md:flex flex flex-col  ">
+      <div className="bg-[#1e3730] rounded-xl text-white md:min-h-screen h-full  w-full ssmd:py-3  flex flex-col ">
+        <div className="md:px-10 px-3 relative z-10 ">
           <div className="flex items-center   md:gap-60">
             <div className="flex flex-col">
               {/* icon grid  */}
@@ -109,31 +109,58 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="relative md:-mt-[80px] -mt-[140px]">
-          <h1 className="relative text-[#f2ac83] mr-8 md:text-[29em]  text-[6rem] ml-5 md:mb-0 mb-[38px]  tracking-tighter inter">
+        <div className="relative md:-mt-[75px] ">
+          <h1 className="relative text-[#f2ac83] mr-8 md:text-[27rem]  text-[6rem] ml-5 md:mb-0   tracking-tighter inter">
             interim
             <div
-              className="h-0.5 md:w-[1200px] w-[290px] md:ml-25  bg-neutral-500/90
+              className="h-[0.009rem] md:w-[1200px] w-[290px] md:ml-25  bg-neutral-500
            bottom-0   md:-translate-y-20  -translate-y-6"
             />
           </h1>
-          <div className="flex md:gap-90 md:px-20 absolute bottom-0 md:-translate-y-11 text-[0.8rem] md:text-[1.1rem] px-10  pl-1 pr-1 ">
-            <div className="flex md:gap-5 gap-3     md:mt-0 md:ml-15 md:flex-row flex-col  ">
-              <a className="hover:underline w-fit cursor-pointer    text-white  transition-300 delay-200 ease-in hover:text-[#f2ac83]">
+
+          {/* Desktop view  */}
+          <div className="md:flex hidden md:gap-90 md:px-20  absolute bottom-0 md:-translate-y-11 text-[0.6rem] md:text-[1.1rem]   md:whitespace-nowrap">
+            <div className="flex md:gap-5 gap-2      md:mt-0 md:ml-15 md:flex-row flex-col  ">
+              <a className="hover:underline w-fit md:ml-0  md:mt-0  ml-5 mt-2 cursor-pointer    text-white  transition-300 delay-200 ease-in hover:text-[#f2ac83]">
                 Privacy Policy
               </a>
-              <a className="hover:underline w-fit cursor-pointer  text-white  transition-300 delay-200 ease-in hover:text-[#f2ac83]">
+              <a className="hover:underline w-fit md:ml-0 ml-5   cursor-pointer  text-white  transition-300 delay-200 ease-in hover:text-[#f2ac83]">
                 Terms
               </a>
             </div>
-            <div className="flex gap-5 md:mt-0   ml-40 md:flex-row flex-col">
-              <a className="hover:underline w-fit cursor-pointer   text-white  transition-300 delay-200 ease-in hover:text-[#f2ac83]">
+            <div className="flex gap-5 md:mt-0   md:ml-40 md:flex-row flex-col ">
+              <a className="hover:underline w-fit cursor-pointer md:ml-0  md:mt-0  ml-5   text-white  transition-300 delay-200 ease-in hover:text-[#f2ac83]">
                 ©Template by RealMehdi
               </a>
-              <a className="ml-4 hover:underline w-fit cursor-pointer  text-white  transition-300 delay-200 ease-in hover:text-[#f2ac83]">
+              <a className="ml-4  hover:underline w-fit cursor-pointer  text-white  transition-300 delay-200 ease-in hover:text-[#f2ac83]">
                 Built in Framer
               </a>
             </div>
+          </div>
+
+          {/* Mobile view  */}
+          <div className="md:hidden flex items-center justify-between -mt-3 px-4 mb-5 text-[0.7rem] ">
+            <div className="flex items-start   flex-col gap-2 ">
+
+              <a className=" text-white  ">
+                Privacy Policy
+              </a>
+
+              <a className=" text-white  ">
+                Terms
+              </a>
+            </div>
+
+            <div className="flex items-start justify-center flex-col gap-2">
+
+              <a className=" text-white  ">
+                ©Template by RealMehdi
+              </a>
+              <a className=" text-white   ">
+                Built in Framer
+              </a>
+            </div>
+
           </div>
         </div>
       </div>

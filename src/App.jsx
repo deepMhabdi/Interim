@@ -14,8 +14,11 @@ import Review from "./components/Reviews";
 import Blogs from "./components/Blogs"
 // import Specialities from "./components/Specialities";
 import ContactForm from "./components/ContactForm";
+import { Mail, Phone, CircleStop } from "lucide-react";
 
 const App = () => {
+
+
   useEffect(() => {
     const lenis = new Lenis();
 
