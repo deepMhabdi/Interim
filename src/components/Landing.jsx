@@ -62,18 +62,18 @@ const Landing = () => {
   return (
     <div>
       <div className="w-full">
-        <div className="mt-35">
+        <div className="mt-35 mb-15 md:mb-0">
           <h1 className="md:text-hero md:leading-30 leading-none whitespace-nowrap text-[4.3rem]  text-[#1d332c] inter-nav tracking-tight">
             Your Ideas,
             <br />
-            <div className="flex md:flex-row md:tracking-none tracking-tight flex-col md:text-[4.3rem] text-[4.1rem]">Our Creative <span className="satisfy-regular md:ml-6">Twist</span></div>
+            <div className="flex md:flex-row md:tracking-none tracking-tight flex-col md:text-card text-[4.1rem] ">Our Creative <span className="satisfy-regular md:ml-6">Twist</span></div>
 
           </h1>
         </div>
         <div className="flex md:flex-row flex-col gap-5 mt-5 items-center justify-between ">
-          <div>
+          <div className="mb-8 md:mb-0 ">
             <div className="flex flex-col gap-5">
-              <div className="flex gap-1">
+              <div className="flex gap-1 ">
                 {Array.from({ length: currentReview.stars }).map((_, index) => (
                   <Star key={index} color="#f2ac83" fill="#f2ac83" />
                 ))}
@@ -107,7 +107,7 @@ const Landing = () => {
               ))}
             </div>
           </div>
-          <div className="p-5 bg-[#f6f7e9] w-[400px] h-full rounded-xl ">
+          <div className="p-5 bg-[#f6f7e9] w-[400px] h-full rounded-xl  ">
             <p className="text-[#4b5a54] inter-nav text-xl">
               With a commitment to sustainability and innovative solutions where
               we craft beautiful, functional spaces that stand the test of time.
