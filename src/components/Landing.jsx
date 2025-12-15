@@ -122,7 +122,7 @@ const Landing = () => {
         style={isMobile ? {} : { y, marginBottom: y }}
         className="vid md:mt-50 mt-15 "
         data-scroll
-        data-scroll-speed="0.6"
+        data-scroll-speed="1"
       >
         <video
           src="https://framerusercontent.com/assets/mSsTg3IQcSmGsgmBbKnv84RbHUw.mp4"
