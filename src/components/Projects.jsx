@@ -66,7 +66,7 @@ export default function Projects() {
 
     return (
         <div ref={container} className="w-full relative px-4 py-4 ">
-            <h1 className="md:text-services text-[6rem] mr-5 interServices  text-center tracking-tight text-[#1e3730]">Projects</h1>
+            <h1 className="md:text-services text-[5.5rem] mr-5 interServices  text-center tracking-tight text-[#1e3730]">Projects</h1>
             <div className="flex gap-1 absolute top-0 left-1/2 md:-translate-x-65 md:translate-y-32 translate-y-7 -translate-x-20 items-center justify-center">
                 <CircleStopIcon className="w-3 h-3 mb-[0.2rem]" />
                 <h1 className="text-[#1e3730] md:text-[0.8rem] text-[0.9rem] font-bold interCard tracking-tight uppercase">Our Portfolio</h1>
