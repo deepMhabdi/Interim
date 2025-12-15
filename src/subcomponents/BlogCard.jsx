@@ -5,7 +5,11 @@ export default function BlogCard({ imgurl, tag, date, timeToRead, heading, }) {
             <a href="#">
 
                 {/* <div className="bg-[#fefff2] rounded-xl px-3   md:w-[10px] md:h-[290px] w-full h-auto pb-4 md:pb-0 group overflow-hidden"> */}
-                <div className="md:w-[690px] md:h-[290px] bg-[#fefff2] rounded-xl px-3 group overflow-hidden">
+                <div
+
+                    
+
+                    className="md:w-[690px] md:h-[290px] bg-[#fefff2] rounded-xl px-3 group overflow-hidden">
                     <div className="flex flex-col-reverse md:flex-row gap-3">
                         <div className="w-full h-[200px] md:w-[260px] md:h-[260px] mt-4 overflow-hidden rounded-xl">
                             <img src={imgurl} alt="" className="md:w-full md:h-full  w-full h-full   object-cover   rounded-xl transition-transform duration-700 ease-in group-hover:scale-110 " />
