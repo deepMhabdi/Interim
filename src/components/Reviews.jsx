@@ -9,7 +9,7 @@ export default function Reviews() {
                 <h1 className="md:text-[14rem] text-[5.5rem] interServices  md:mt-10 mt-15 tracking-tight text-left md:ml-10 ml-5 text-[#1e3730] md:mb-0 mb-5">Reviews</h1>
                 <div className="flex gap-1 absolute top-0 left-0  md:translate-x-48 md:translate-y-25  translate-x-24 items-center  justify-center">
                     <CircleStopIcon className="w-3 h-3 mb-[0.2rem]" />
-                    <h1 className=" text-[#1e3730] md:text-[0.9rem] text-[1.1rem] font-bold tracking-wide">CLIENTS WORDS</h1>
+                    <h1 className=" text-[#1e3730] md:text-[0.9rem] text-[1.1rem]  font-bold tracking-wide">CLIENTS WORDS</h1>
                 </div>
 
                 <div className="flex shrink-0 overflow-hidden w-full">
