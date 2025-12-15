@@ -31,7 +31,7 @@ export default function ReviewCard({ avatarUrl, name, designation, review, imgUr
 
                 </div>
 
-                <div className="absolute top-0 left-0 w-[90px] h-[70px] ">
+                <div className="absolute top-0 left-0 w-[90px] h-[70px]">
                     <img src={avatarUrl} alt="" className="rounded-lg w-full h-full object-cover " />
                 </div>
             </div>
